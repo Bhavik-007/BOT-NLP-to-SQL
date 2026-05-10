@@ -1,0 +1,8 @@
+tables:
+  Customer_Purchase:
+    schema: "dbo"
+    full_name: "[dbo].[Customer_Purchase]"
+    description: "Customer purchase table containing customer demographics, purchase amount, ad click flag, actual label, and predicted label."
+    primary_key: "Customer_ID"
+    allowed_columns: ["Customer_ID","Age","City","Purchase_Amount","Ad_Click","Actual","Predicted"]
+ 
