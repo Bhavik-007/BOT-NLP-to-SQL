@@ -365,19 +365,6 @@ For Document Assistant entries, `generated_sql` is blank.
 
 ## Environment Variables
 
-The project supports `.env` overrides:
-
-```env
-SQL_SERVER=localhost
-SQL_DATABASE=Jarvis_dev
-SQL_DRIVER=ODBC Driver 17 for SQL Server
-SQL_TRUSTED_CONNECTION=yes
-SQL_ENCRYPT=no
-SQL_TRUST_SERVER_CERTIFICATE=yes
-SQL_CONNECTION_TIMEOUT=5
-MONGODB_URI=mongodb://localhost:27017
-```
-
 ## Example SQL Assistant Questions
 
 ```text
