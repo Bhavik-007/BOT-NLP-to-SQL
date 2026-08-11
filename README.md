@@ -143,26 +143,6 @@ Edit:
 
 Example:
 
-```yaml
-database:
-  server: "localhost"
-  database: "Jarvis_dev"
-  driver: "ODBC Driver 17 for SQL Server"
-  trusted_connection: "yes"
-  encrypt: "no"
-  trust_server_certificate: "yes"
-  connection_timeout: 30
-```
-
-Common server formats:
-
-```yaml
-server: "localhost"
-server: "."
-server: "localhost\\SQLEXPRESS"
-server: ".\\SQLEXPRESS"
-server: "tcp:localhost,1433"
-```
 
 ### 5. Test SQL Server connection
 
@@ -314,11 +294,6 @@ image_analysis:
   vision_model: "llava"
   timeout_seconds: 120
 
-mongodb:
-  uri: "mongodb://localhost:27017"
-  database: "nlp_sql_bot"
-  files_collection: "document_files"
-  history_collection: "document_chat_history"
 ```
 
 ## Qdrant
@@ -348,10 +323,6 @@ MongoDB is optional. It stores:
 
 Start MongoDB locally or update:
 
-```env
-MONGODB_URI=mongodb://localhost:27017
-OLLAMA_VISION_MODEL=llava
-```
 
 If MongoDB is unavailable, the app continues running and skips persistence.
 
